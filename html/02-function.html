@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>functions</title>
+
+</head>
+
+<body>
+    <h1>functions</h1>
+
+    <p id="demo">0</p>
+    <button type="button" onclick="myFunction()">Add</button>
+
+    <script>
+        // Define a variable outside the function
+        let a = 0;
+
+        function myFunction() {
+            a++;
+            document.getElementById("demo").innerHTML = a;
+        }
+
+        // console.log("Hello World!");
+    </script>
+
+</body>
+
+</html>
