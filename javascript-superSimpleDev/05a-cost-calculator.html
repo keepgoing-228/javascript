@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Template</title>
+    <style></style>
+  </head>
+
+  <body>
+    <h1>Cost Calculator</h1>
+    <button onclick="cost += 5; console.log(`Total Cost: ${cost}`);">
+      a coffee (+5)
+    </button>
+    <button onclick="cost += 3; console.log(`Total Cost: ${cost}`);">
+      a bagels (+3)
+    </button>
+    <button onclick="cost +=9; console.log(`Total Cost: ${cost}`);">
+      a soup (+9)
+    </button>
+    <button
+      onclick="
+      tax = cost * 0.1;
+      totalCost = cost + tax;
+      console.log(`Cost: ${cost}`);
+      console.log(`Tax: ${tax}`);
+      console.log(`Total Cost: ${totalCost}`);"
+    >
+      Check Total Cost
+    </button>
+    <script>
+      let name = "Tim Wan";
+      console.log(`my name is ${name}.`);
+
+      let cost = 0;
+      let tax = 0;
+      let totalCost = cost + tax;
+    </script>
+  </body>
+</html>
